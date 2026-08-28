@@ -1,0 +1,17 @@
+# LaTeX 临时编译产物（只保留 tex, pdf 和 sty/cls）
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.xdv
+*.bbl
+*.blg
+
+# 系统与编辑器缓存
+.DS_Store
+Thumbs.db
+.vscode/
+__pycache__/

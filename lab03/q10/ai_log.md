@@ -1,0 +1,4 @@
+- 提示词：要求修复当 --name 全为空白字符时以 SystemExit(2) 退出，不得引入外部依赖，跑通 pytest。
+- 智能体改动：在 cli.py 解析参数后增加 `if not a.name.strip(): sys.exit(2)` 判定。
+- 人工检查：审查 `git diff`，确认未改动 pyproject.toml 及无关配置，无多余冗余文件。
+- 验证结果：执行 `pytest tests/test_cli.py` 测试通过，状态码断言准确。
